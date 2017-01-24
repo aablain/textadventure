@@ -1,0 +1,7 @@
+<h1>
+  Welcome, {{userName}}!
+</h1>
+<label for="button">Please enter your name:</label>
+<input #name />
+<a routerLink="story"><button name="button" (click)="submit(name.value)">Submit</button></a>
+<router-outlet></router-outlet>

@@ -1,7 +1,7 @@
-<p>{{storyToDisplay.scenario}}</p>
+<div>
+  <h3>{{storyToDisplay.scenario}}</h3>
+  <p>{{userName}}</p>
 
-<p>{{storyToDisplay.option1}}</p>
-<p>{{storyToDisplay.option2}}</p>
-<p>
-
-</p>
+  <p (click)="goodOption(storyToDisplay.id)">{{storyToDisplay.option1}}</p>
+  <p (click)="badOption(storyToDisplay.id)">{{storyToDisplay.option2}}</p>
+</div>
